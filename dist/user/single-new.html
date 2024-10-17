@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html
+  lang="ar"
+  dir="rtl"
+  class="light"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- Css Files -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/output.css"
+    />
+    <title>Aytamna RSS</title>
+  </head>
+  <body>
+    <!--  *** HEADER *** -->
+    <header
+      class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-[48] w-full bg-white border-b text-sm py-5 lg:ps-[280px]"
+    >
+      <nav class="px-4 sm:px-6 flex basis-full items-center w-full mx-auto">
+        <div
+          class="me-5 lg:me-0 lg:hidden flex gap-3 justify-start items-center"
+        >
+          <!-- Navigation Toggle -->
+          <button
+            type="button"
+            class="h-10 w-28 flex justify-center items-center gap-x-2 border border-gray-200 rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="hs-application-sidebar"
+            aria-label="Toggle navigation"
+            data-hs-overlay="#hs-application-sidebar"
+          >
+            <span class="sr-only">Toggle Navigation</span>
+            <img
+              src="../assets/icons/menu.svg"
+              alt="menu Icon"
+            />
+          </button>
+          <!-- End Navigation Toggle -->
+          <!-- Logo -->
+          <a
+            class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+            href="main.html"
+            aria-label="aytamna"
+          >
+            <img
+              src="../assets/images/logo-dark.svg"
+              alt=""
+              class="w-28"
+            />
+          </a>
+          <!-- End Logo -->
+        </div>
+
+        <div
+          class="w-full flex items-center justify-end ms-auto md:justify-between gap-x-1 md:gap-x-3"
+        >
+          <div class="hidden md:block">
+            <h4 class="text-h4 text-black font-IBM font-bold">
+              اهلا بعودتك، ملك!
+            </h4>
+            <p class="text-description text-black font-IBM font-normal mt-3">
+              <span class="mx-2">الاربعاء</span>
+              <span class="mx-2">11 سبتمبر 2024</span>
+            </p>
+          </div>
+          <div class="hidden md:block flex-1 mx-10">
+            <!-- Search Input -->
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 end-0 flex items-center pointer-events-none z-20 pe-3.5"
+              >
+                <svg
+                  class="shrink-0 size-6 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle
+                    cx="11"
+                    cy="11"
+                    r="8"
+                  />
+                  <path d="m21 21-4.3-4.3" />
+                </svg>
+              </div>
+              <input
+                type="text"
+                class="input rounded-full px-7"
+                placeholder="بحث"
+              />
+            </div>
+            <!-- End Search Input -->
+          </div>
+          <div class="flex flex-row items-center justify-end gap-7">
+            <div
+              class="hs-dropdown [--placement:bottom-right] relative inline-flex"
+            >
+              <button
+                id="hs-dropdown-notifications"
+                type="button"
+                class="size-[50px] relative inline-flex justify-center items-center gap-x-5 text-sm font-semibold rounded-full border border-transparent text-primary-400 bg-secondary-100 hover:bg-secondary-200 focus:outline-none focus:bg-secondary-100 disabled:opacity-50 disabled:pointer-events-none"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <img
+                  src="../assets/icons/notification-bing.svg"
+                  alt=""
+                />
+                <span class="sr-only">Notifications</span>
+              </button>
+              <div
+                class="hs-dropdown-menu dropdown-menu duration min-w-96"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-notifications"
+              >
+                <div class="py-1 space-y-0.5">
+                  <ul>
+                    <li class="hover:bg-secondary-100 p-4 rounded-lg mb-2">
+                      <div class="flex justify-between items-start">
+                        <div class="text-body font-bold font-IBM text-black">
+                          استكمال طلب الشراكة
+                        </div>
+                        <div
+                          class="text-description font-semibold font-IBM text-black"
+                        >
+                          11-09-2024
+                        </div>
+                      </div>
+                      <p
+                        class="text-black text-description font-IBM font-normal mt-2"
+                      >
+                        طلبك في انتظار إرفاق الوثائق.
+                      </p>
+                    </li>
+                    <li class="hover:bg-secondary-100 p-4 rounded-lg mb-2">
+                      <div class="flex justify-between items-start">
+                        <div class="text-body font-bold font-IBM text-black">
+                          استكمال طلب الشراكة
+                        </div>
+                        <div
+                          class="text-description font-semibold font-IBM text-black"
+                        >
+                          11-09-2024
+                        </div>
+                      </div>
+                      <p
+                        class="text-black text-description font-IBM font-normal mt-2"
+                      >
+                        طلبك في انتظار إرفاق الوثائق.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Dropdown -->
+            <div
+              class="hs-dropdown [--placement:bottom-right] relative inline-flex"
+            >
+              <button
+                id="hs-dropdown-account"
+                type="button"
+                class="inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-black focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <div class="text-end hidden lg:block">
+                  <p class="text-description text-black font-IBM font-bold">
+                    ملك حمّاد
+                  </p>
+                  <span
+                    class="text-description text-black font-IBM font-normal mt-2"
+                    >رقم المستفيد #12345678</span
+                  >
+                </div>
+                <img
+                  class="shrink-0 size-[50px] rounded-full"
+                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                  alt="Avatar"
+                />
+              </button>
+              <div
+                class="hs-dropdown-menu dropdown-menu duration min-w-60"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-account"
+              >
+                <div class="py-3 px-5 bg-secondary-100 rounded-t-lg">
+                  <p class="text-description text-black font-IBM font-bold">
+                    ملك حمّاد
+                  </p>
+                  <span
+                    class="text-description text-black font-IBM font-normal mt-2"
+                    >رقم المستفيد #12345678</span
+                  >
+                </div>
+                <div class="py-1.5 space-y-0.5">
+                  <button
+                    class="flex w-full items-center gap-x-3.5 py-2 px-3 rounded-lg text-body text-black font-IBM font-bod hover:bg-secondary-100 focus:outline-none focus:bg-secondary-100"
+                    onclick="openPopup('logout-modal')"
+                  >
+                    <img
+                      src="../assets/icons/logout.svg"
+                      alt="logout-icon"
+                    />
+                    تسجيل الخروج
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- End Dropdown -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- *** END HEADER *** -->
+
+    <!-- *** MAIN CONTENT *** -->
+    <main>
+      <!--  Sidebar -->
+      <aside
+        id="hs-application-sidebar"
+        class="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 translate-x-full transition-all duration-300 transform w-[280px] h-full hidden fixed inset-y-0 start-0 z-[60] bg-primary-400 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0"
+        role="dialog"
+        tabindex="-1"
+        aria-label="Sidebar"
+      >
+        <div class="relative flex flex-col h-full max-h-full">
+          <div class="px-6 pt-4">
+            <!-- Logo -->
+            <a
+              class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+              href="#"
+              aria-label="aytamna"
+            >
+              <img
+                src="../assets/images/logo.svg"
+                alt=""
+                class="w-28"
+              />
+            </a>
+            <!-- End Logo -->
+          </div>
+
+          <!-- Content -->
+          <div
+            class="h-full flex items-center overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300"
+          >
+            <nav
+              class="hs-accordion-group p-3 w-full flex flex-col flex-wrap"
+              data-hs-accordion-always-open
+            >
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a
+                    class="asideItem activeAsideItem"
+                    href="index.html"
+                  >
+                    <img
+                      src="../assets/icons/home.svg"
+                      alt="home Icon"
+                      class=""
+                    />
+                    الصفحة الرئيسية
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="advance-search.html"
+                  >
+                    <img
+                      src="../assets/icons/user.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    البحث المتقدم
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="notification-setting.html"
+                  >
+                    <img
+                      src="../assets/icons/notification-bing-w.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إعداد التنبيهات
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="account.html"
+                  >
+                    <img
+                      src="../assets/icons/ads-click.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    حساب المستخدم
+                  </a>
+                </li>
+              </ul>
+              <div class="md:hidden block my-5">
+                <!-- Search Input -->
+                <div class="relative">
+                  <div
+                    class="absolute inset-y-0 end-0 flex items-center pointer-events-none z-20 pe-3.5"
+                  >
+                    <svg
+                      class="shrink-0 size-6 text-gray-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle
+                        cx="11"
+                        cy="11"
+                        r="8"
+                      />
+                      <path d="m21 21-4.3-4.3" />
+                    </svg>
+                  </div>
+                  <input
+                    type="text"
+                    class="input rounded-full px-7"
+                    placeholder="بحث"
+                  />
+                </div>
+                <!-- End Search Input -->
+              </div>
+            </nav>
+          </div>
+          <!-- End Content -->
+
+          <div class="p-3 w-full">
+            <button
+              class="flex items-center gap-x-3.5 py-5 px-3 text-subTitle text-primary-300 rounded-lg hover:bg-primary-500 focus:outline-none focus:bg-primary-500 w-full"
+              onclick="openPopup('logout-modal')"
+            >
+              <img
+                src="../assets/icons/logout.svg"
+                alt="logout Icon"
+                class=""
+              />
+              تسجيل الخروج
+            </button>
+          </div>
+        </div>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Content -->
+      <div class="w-full lg:ps-[280px]">
+        <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
+          <div
+            class="p-4 sm:p-6 bg-white rounded-lg shadow-dasboard lg:min-h-[81vh] min-h-[80vh]"
+          >
+            <!-- Breadcrumb -->
+            <nav
+              class="Breadcrumb"
+              aria-label="Breadcrumb"
+            >
+              <ol
+                role="list"
+                class="flex items-center"
+              >
+                <li>
+                  <div class="flex items-center">
+                    <a
+                      href="index.html"
+                      class="breadcrumbLink"
+                      >الرئيسية</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="index.html"
+                      class="breadcrumbLink"
+                      aria-current="page"
+                    >
+                      قائمة الأخبار
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="single-new.html"
+                      class="breadcrumbLink"
+                      aria-current="page"
+                    >
+                      ارتفاع أسعار النفط العالمي
+                    </a>
+                  </div>
+                </li>
+              </ol>
+              <div></div>
+            </nav>
+            <!-- End Breadcrumb -->
+            <!-- content here !! -->
+            <div class="mt-5">
+              <div class="shadow-dasboard rounded-lg p-8">
+                <h3
+                  class="font-IBM font-bold md:text-title text-body text-primary-500 mb-5"
+                >
+                  عنوان الخبر: ارتفاع أسعار النفط العالمي
+                </h3>
+                <p
+                  class="font-IBM font-normal md:text-body text-badges text-primary-500 mt-1"
+                >
+                  وصف: تقرير حول تأثير ارتفاع أسعار النفط على الاقتصاد العالمي.
+                </p>
+                <p
+                  class="font-IBM font-normal md:text-body text-badges text-primary-500 mt-1"
+                >
+                  رابط الخبر:
+                  <a
+                    href="#"
+                    class="text-primary-400 underline"
+                    >رابط الخبر</a
+                  >
+                </p>
+                <p
+                  class="font-IBM font-normal md:text-body text-badges text-primary-500 mt-1"
+                >
+                  تاريخ النشر: 2024-09-16
+                </p>
+                <p
+                  class="text-IBM font-normal md:text-body text-badges text-primary-500 mt-5"
+                >
+                  أضافت "المملكة تبدأ عمليات حقن الغاز الطبيعي وإعادة إنتاجه عن
+                  طريق حقن الغاز المعالج في باطن الأرض، وأول مشروع في مكمن
+                  الحوية عنيزة، فيما ستتم إعادة إنتاجه في شبكة الغاز الرئيسة
+                  بمعدل 2 مليار قدم مكعبة قياسية في اليوم". أكبر 10 منتجين للغاز
+                  الطبيعي في العالم.. بينهم 3 دول عربية ويسهم المشروع في إدارة
+                  التغيرات الموسمية على الطلب، وتحقيق مستهدفات برنامج إزاحة
+                  الوقود السائل، إضافة إلى خفض الانبعاثات الكربونية. إنتاج الغاز
+                  الطبيعي في السعودية شهدت السعودية، وهي تاسع أكبر دولة منتجة
+                  للغاز الطبيعي، زيادة في إنتاجها بأكثر من 10% في السنوات الخمس
+                  الماضية ليصل إلى مستوى قياسي بلغ 105 مليارات متر مكعب من وقود
+                  الطاقة. تشير تقارير شركة أبحاث السوق المتعمقة "Mordor
+                  Intelligence" إلى أن هذا النمو في الإنتاج يرجع في جزء كبير منه
+                  إلى زيادة تطوير آبار الغاز الطبيعي المستقلة. منحت شركة أرامكو
+                  عقوداً لشركات الطاقة التي تتطلع إلى تطوير أكبر حقل للغاز غير
+                  التقليدي في البلاد، وهو حقل الجافورة، الواقع بالقرب من الخليج
+                  العربي. حاليا لا تصدر البلاد إنتاجها من الغاز الطبيعي. ومع
+                  ذلك، تخطط الحكومة لبدء تصدير الغاز الطبيعي بحلول عام 2030.
+                  ووفقا لتقييم الأثر البيئي، تعمل السعودية على استبدال "النفط
+                  الخام وزيت الوقود والمولدات الكهربائية التي تعمل بالديزل
+                  بالغاز الطبيعي وتوليد الطاقة المتجددة بحلول عام 2030، وهو ما
+                  من المرجح أن يزيد الطلب المحلي على الغاز الطبيعي".
+                </p>
+              </div>
+              <div
+                class="flex lg:justify-end justify-center items-center mt-7 gap-3"
+              >
+                <button
+                  type="button"
+                  class="btn-primary"
+                  onclick="openPopup('share-modal')"
+                >
+                  <img
+                    src="../assets/icons/share.svg"
+                    alt="share"
+                    class="inline"
+                  />
+                  مشاركة
+                </button>
+                <a
+                  class="btn-primary-secondary"
+                  href="index.html"
+                >
+                  رجوع إلى القائمة
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Content -->
+      <!-- *** END MAIN CONTENT *** -->
+    </main>
+    <footer>
+      <div class="w-full lg:ps-[280px]">
+        <div class="flex justify-between items-center px-6 pb-6 lg:px-16">
+          <p class="font-IBM text-black text-badges font-normal">
+            جميع الحقوق محفوظة © لمنصة أيتامنا 2024
+          </p>
+          <a
+            href="#"
+            class="font-IBM text-black text-badges font-normal"
+            >ساسية الاستخدام والخصوصية</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Share popup -->
+    <div
+      class="relative z-10 hidden"
+      id="share-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white px-4 pb-4 pt-5 transition-all sm:my-8 sm:w-full sm:max-w-2xl sm:p-6"
+          >
+            <div>
+              <div
+                class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-secondary-100"
+              >
+                <img
+                  src="../assets/icons/share-blue.svg"
+                  alt="lock"
+                  class=""
+                />
+              </div>
+              <div class="mt-3 text-center sm:mt-5">
+                <h3
+                  class="font-IBM font-bold md:text-title text-body text-primary-500 mb-2"
+                >
+                  عنوان الخبر: ارتفاع أسعار النفط العالمي
+                </h3>
+                <p
+                  class="font-IBM font-normal md:text-body text-badges text-primary-500 mt-1"
+                >
+                  وصف: تقرير حول تأثير ارتفاع أسعار النفط على الاقتصاد العالمي.
+                </p>
+              </div>
+            </div>
+            <div class="mt-5 sm:mt-6">
+              <h6
+                class="font-IBM font-bold text-[#87C756] text-title text-center"
+              >
+                اختر المنصة التي تريد مشاركة الخبر عليها
+              </h6>
+              <form
+                action="#"
+                method="POST"
+                class="space-y-6 mt-5"
+              >
+                <div
+                  class="grid grid-cols-2 place-items-start gap-3 w-[280px] mx-auto"
+                >
+                  <div class="relative flex justify-start items-start">
+                    <div class="flex h-6 items-center">
+                      <input
+                        id="Facebook"
+                        name="Facebook"
+                        type="checkbox"
+                        class="checkBoxInput"
+                      />
+                    </div>
+                    <div class="mr-3 text-sm leading-6">
+                      <label
+                        for="Facebook"
+                        class="label text-description"
+                        >Facebook
+                      </label>
+                    </div>
+                  </div>
+                  <div class="relative flex justify-start items-start">
+                    <div class="flex h-6 items-center">
+                      <input
+                        id="Linkedin"
+                        name="Linkedin"
+                        type="checkbox"
+                        class="checkBoxInput"
+                      />
+                    </div>
+                    <div class="mr-3 text-sm leading-6">
+                      <label
+                        for="Linkedin"
+                        class="label text-description"
+                        >Linkedin
+                      </label>
+                    </div>
+                  </div>
+                  <div class="relative flex justify-start items-start">
+                    <div class="flex h-6 items-center">
+                      <input
+                        id="Twitter"
+                        name="Twitter"
+                        type="checkbox"
+                        class="checkBoxInput"
+                      />
+                    </div>
+                    <div class="mr-3 text-sm leading-6">
+                      <label
+                        for="Twitter"
+                        class="label text-description"
+                        >Twitter
+                      </label>
+                    </div>
+                  </div>
+                  <div class="relative flex justify-start items-start">
+                    <div class="flex h-6 items-center">
+                      <input
+                        id="WhatsUp"
+                        name="WhatsUp"
+                        type="checkbox"
+                        class="checkBoxInput"
+                      />
+                    </div>
+                    <div class="mr-3 text-sm leading-6">
+                      <label
+                        for="WhatsUp"
+                        class="label text-description"
+                        >WhatsUp
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                  <button
+                    type="button"
+                    class="btn-primary"
+                    onclick="openPopup('confirm-share-modal')"
+                  >
+                    مشاركة</button
+                  ><button
+                    type="button"
+                    class="btn-primary-secondary"
+                    onclick="closePopup('share-modal')"
+                  >
+                    الرجوع
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirm Share popup -->
+    <div
+      class="relative z-10 hidden"
+      id="confirm-share-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white px-4 pb-4 pt-5 transition-all sm:my-8 sm:w-full sm:max-w-xl sm:p-6"
+          >
+            <div>
+              <img
+                src="../assets/icons/check-g.svg"
+                alt="check"
+                class="mx-auto"
+              />
+            </div>
+            <div class="mt-5 sm:mt-6">
+              <h6
+                class="font-IBM font-bold text-[#87C756] text-title text-center"
+              >
+                تم مشاركة الخبر بنجاح!
+              </h6>
+              <p
+                class="font-IBM font-normal text-body text-center text-primary-600 mt-3"
+              >
+                لقد تم مشاركة الخبر على المنصات التي تم اختيارها من طرفك بنجاح
+              </p>
+              <button
+                class="btn-primary mt-5"
+                type="button"
+                onclick="closePopup('confirm-share-modal')"
+              >
+                عودة إلى الرئيسية
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logout popup -->
+    <div
+      class="relative z-10 hidden"
+      id="logout-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white px-4 pb-4 pt-5 text-left transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
+          >
+            <div>
+              <div
+                class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
+              >
+                <img
+                  src="../assets/icons/logout-red.svg"
+                  alt="lock"
+                  class=""
+                />
+              </div>
+              <div class="mt-3 text-center sm:mt-5">
+                <h3
+                  class="text-title font-bold text-black font-IBM"
+                  id="modal-title"
+                >
+                  هل انت متاكد من تسجيل الخروج؟
+                </h3>
+              </div>
+            </div>
+            <div class="mt-5 sm:mt-6">
+              <form
+                action="#"
+                method="POST"
+                class="space-y-6"
+              >
+                <button
+                  type="submit"
+                  class="btn-danger w-full"
+                >
+                  نعم، سجل الخروج
+                </button>
+              </form>
+              <div class="mt-3">
+                <button
+                  type="button"
+                  class="btn-danger-secondary w-full"
+                  onclick="closePopup('logout-modal')"
+                >
+                  لا، اريد البقاء
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- preline JS  -->
+    <script src="../assets/js/preline.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
