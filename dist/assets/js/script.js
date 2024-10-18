@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   resetPasswordInput();
   addfiles();
   discountCard();
+  choicesSelect();
 });
 
 function togglePasswordVisibility(element, inputId) {
@@ -241,4 +242,25 @@ function printCard() {
     `);
   newWin.document.close();
   setTimeout(() => newWin.close(), 10);
+}
+
+function choicesSelect() {
+  // Pass single element
+  if (!document.querySelector("#keywords")) {
+    return;
+  }
+  const element = document.querySelector("#keywords");
+  const choices = new Choices(element, {
+    silent: true,
+    removeItems: true,
+    removeItemButton: true,
+    removeItemButtonAlignLeft: false,
+
+    addChoices: true,
+    addItems: true,
+    renderChoiceLimit: -1,
+    maxItemCount: -1,
+    closeDropdownOnSelect: "auto",
+    singleModeForMultiSelect: true,
+  });
 }
