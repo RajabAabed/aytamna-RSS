@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Breadcrumb {
+  @apply bg-primary-500 !important;
+}
+.breadcrumbLink {
+  @apply text-white;
+}
+.Breadcrumb svg {
+  @apply text-white;
+}
