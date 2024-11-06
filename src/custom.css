@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .Breadcrumb {
   @apply bg-primary-500 !important;
 }
@@ -10,4 +6,16 @@
 }
 .Breadcrumb svg {
   @apply text-white;
+}
+.facebook {
+  @apply bg-[#1877F2] text-white;
+}
+.twitter {
+  @apply bg-[#1DA1F2] text-white;
+}
+.linkedin {
+  @apply bg-[#0A66C2] text-white;
+}
+.whatsapp {
+  @apply bg-[#25D366] text-white;
 }
